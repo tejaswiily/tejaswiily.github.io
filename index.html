@@ -4,12 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tejaswi Nallamilli</title>
 
 <link rel="stylesheet" href="style.css">
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
@@ -19,6 +18,7 @@
 <div id="particles-js"></div>
 
 <nav>
+
 <h3>Tejaswi</h3>
 
 <div class="nav-links">
@@ -27,6 +27,7 @@
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </div>
+
 </nav>
 
 <header>
@@ -101,41 +102,20 @@ I am an AI/ML engineering student passionate about building intelligent systems 
 
 <div class="card">
 <h3>Intrusion Detection System</h3>
-<p>
-Machine learning based system detecting network attacks using Random Forest.
-</p>
-
-<a href="https://github.com/tejaswiily/INTRUSION-DETECTION-SYSTEM">
-View Project
-</a>
+<p>Machine learning based IDS detecting network attacks.</p>
+<a href="https://github.com/tejaswiily/INTRUSION-DETECTION-SYSTEM">View Project</a>
 </div>
 
 <div class="card">
-
 <h3>Retail Edge</h3>
-
-<p>
-AI powered retail analytics platform using RAG and NLP.
-</p>
-
-<a href="https://github.com/tejaswiily/Retail-Edge">
-View Project
-</a>
-
+<p>AI powered retail analytics platform using RAG and NLP.</p>
+<a href="https://github.com/tejaswiily/Retail-Edge">View Project</a>
 </div>
 
 <div class="card">
-
 <h3>Task Manager</h3>
-
-<p>
-Python based task management application with database automation.
-</p>
-
-<a href="https://github.com/tejaswiily/Task-Manager">
-View Project
-</a>
-
+<p>Python based task management system.</p>
+<a href="https://github.com/tejaswiily/Task-Manager">View Project</a>
 </div>
 
 </div>
@@ -146,39 +126,50 @@ View Project
 
 <h2>Contact</h2>
 
-<p>
-Email: nallamillitejaswi2004@gmail.com
-</p>
-
-<p>
-LinkedIn: linkedin.com/in/tejaswi-nallamilli
-</p>
+<p>Email: nallamillitejaswi2004@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/tejaswi-nallamilli</p>
 
 </section>
 
 <footer>
-
 <p>© 2026 Tejaswi Nallamilli</p>
-
 </footer>
 
 <script>
 
-var typed = new Typed("#typing", {
-
-strings: [
+new Typed("#typing",{
+strings:[
 "AI/ML Engineer",
 "Machine Learning Developer",
 "AI Systems Builder"
 ],
-
-typeSpeed:50,
-backSpeed:30,
+typeSpeed:60,
+backSpeed:40,
 loop:true
-
 })
 
-particlesJS.load('particles-js','https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json')
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+size:{value:3},
+color:{value:"#58a6ff"},
+
+line_linked:{
+enable:true,
+distance:150,
+color:"#58a6ff",
+opacity:0.4,
+width:1
+},
+
+move:{
+enable:true,
+speed:2
+}
+}
+
+});
 
 </script>
 
