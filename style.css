@@ -1,0 +1,76 @@
+body {
+
+font-family: Arial;
+background:#0d1117;
+color:white;
+margin:0;
+padding:0;
+
+}
+
+header {
+
+text-align:center;
+padding:80px;
+
+}
+
+header h1 {
+
+font-size:40px;
+
+}
+
+.links a {
+
+margin:10px;
+padding:10px 20px;
+background:#238636;
+color:white;
+text-decoration:none;
+border-radius:5px;
+
+}
+
+section {
+
+padding:50px;
+max-width:900px;
+margin:auto;
+
+}
+
+.skills ul {
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+list-style:none;
+padding:0;
+
+}
+
+.skills li {
+
+background:#161b22;
+padding:10px 20px;
+border-radius:6px;
+
+}
+
+.project {
+
+background:#161b22;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+
+}
+
+footer {
+
+text-align:center;
+padding:30px;
+opacity:0.7;
+
+}
