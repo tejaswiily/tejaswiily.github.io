@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,21 +9,37 @@
 
 <link rel="stylesheet" href="style.css">
 
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 
 <body>
 
 <div id="particles-js"></div>
 
+<nav>
+<h3>Tejaswi</h3>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
 <header>
 
 <img src="profile.jpeg" class="profile">
 
-<h1>Venkata Sai Tejaswi Nallamilli</h1>
+<h1 class="gradient-text">
+Venkata Sai Tejaswi Nallamilli
+</h1>
 
-<p class="title">
-AI/ML Engineer | Machine Learning Developer
-</p>
+<h2>
+<span id="typing"></span>
+</h2>
 
 <p class="tagline">
 Building intelligent systems using machine learning and data.
@@ -34,31 +49,33 @@ Building intelligent systems using machine learning and data.
 
 <a href="https://github.com/tejaswiily">GitHub</a>
 
-<a href="https://linkedin.com/in/tejaswi-nallamilli">LinkedIn</a>
+<a href="https://linkedin.com/in/tejaswi-nallamilli">
+LinkedIn
+</a>
 
-<a href="mailto:nallamillitejaswi2004@gmail.com">Email</a>
+<a href="mailto:nallamillitejaswi2004@gmail.com">
+Email
+</a>
 
-<a href="resume.pdf">Download Resume</a>
+<a href="resume.pdf" download>
+Download Resume
+</a>
 
 </div>
 
 </header>
 
-
-<section>
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
-
 I am an AI/ML engineering student passionate about building intelligent systems using machine learning and data analysis. I enjoy developing solutions using Python, NLP, and backend technologies.
-
 </p>
 
 </section>
 
-
-<section>
+<section id="skills">
 
 <h2>Skills</h2>
 
@@ -76,54 +93,48 @@ I am an AI/ML engineering student passionate about building intelligent systems 
 
 </section>
 
-
-<section>
+<section id="projects">
 
 <h2>Projects</h2>
 
 <div class="projects">
 
 <div class="card">
-
 <h3>Intrusion Detection System</h3>
-
 <p>
-
-Machine learning system detecting malicious network traffic.
-
+Machine learning based system detecting network attacks using Random Forest.
 </p>
 
-<a href="https://github.com/tejaswiily">View Project</a>
-
+<a href="https://github.com/tejaswiily/INTRUSION-DETECTION-SYSTEM">
+View Project
+</a>
 </div>
-
 
 <div class="card">
 
 <h3>Retail Edge</h3>
 
 <p>
-
-AI-powered retail analytics platform using RAG and NLP.
-
+AI powered retail analytics platform using RAG and NLP.
 </p>
 
-<a href="https://github.com/tejaswiily">View Project</a>
+<a href="https://github.com/tejaswiily/Retail-Edge">
+View Project
+</a>
 
 </div>
-
 
 <div class="card">
 
 <h3>Task Manager</h3>
 
 <p>
-
-Python automation task management system.
-
+Python based task management application with database automation.
 </p>
 
-<a href="https://github.com/tejaswiily">View Project</a>
+<a href="https://github.com/tejaswiily/Task-Manager">
+View Project
+</a>
 
 </div>
 
@@ -131,57 +142,45 @@ Python automation task management system.
 
 </section>
 
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+Email: nallamillitejaswi2004@gmail.com
+</p>
+
+<p>
+LinkedIn: linkedin.com/in/tejaswi-nallamilli
+</p>
+
+</section>
 
 <footer>
 
 <p>© 2026 Tejaswi Nallamilli</p>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <script>
 
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80
-    },
-    "color": {
-      "value": "#58a6ff"
-    },
-    "shape": {
-      "type": "circle"
-    },
-    "opacity": {
-      "value": 0.5
-    },
-    "size": {
-      "value": 3
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#58a6ff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 2
-    }
-  },
+var typed = new Typed("#typing", {
 
-  "interactivity": {
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      }
-    }
-  }
-});
+strings: [
+"AI/ML Engineer",
+"Machine Learning Developer",
+"AI Systems Builder"
+],
+
+typeSpeed:50,
+backSpeed:30,
+loop:true
+
+})
+
+particlesJS.load('particles-js','https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json')
 
 </script>
-</body>
 
+</body>
 </html>
